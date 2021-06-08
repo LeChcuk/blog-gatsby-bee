@@ -2,6 +2,9 @@
 title: '📚 사람의 목소리는 빛보다 멀리 간다'
 date: 2020-07-02 16:21:13
 category: 'category2'
+thumbnail: 'https://images.hexdrinker.dev/thumbnails/aws.png'
+description: '테스트2'
+tags: ['BCSD', '회고']
 draft: false
 ---
 

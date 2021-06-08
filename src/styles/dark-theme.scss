@@ -3,6 +3,21 @@ body.dark {
   text-shadow: $dark-text-shadow;
   color: $dark-light-font-color;
 
+  .post{
+    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.5);
+
+    .post-body {
+      background: rgba(52,58,64,.5647058823529412);
+      a{
+        color:#fff;
+      }
+    }
+    .post-footer .tag{
+      color:#ff5e62;
+      border-color: #ff5e62;
+    }
+  }
+
   .top,
   .custom-hr {
     background: $dark-theme-gradient;

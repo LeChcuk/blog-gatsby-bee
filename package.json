@@ -76,6 +76,7 @@
     "type": "git",
     "url": "git+https://github.com/JaeYeopHan/gatsby-starter-bee.git"
   },
+  "proxy":"https://github.com",
   "scripts": {
     "post": "gatsby-post-gen",
     "dev": "gatsby develop",

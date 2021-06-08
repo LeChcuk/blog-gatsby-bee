@@ -2,6 +2,21 @@ body.light {
   background-color: $light-background-color;
   text-shadow: $light-text-shadow;
 
+  .post{
+    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.1);
+    
+    .post-body {
+      background: #fff;
+      a{
+        color: #000;
+      }
+    }
+    .post-footer .tag{
+      color:#6190E8;
+      border-color: #6190E8;
+    }
+  }
+
   .top,
   .custom-hr {
     background: $light-theme-gradient;
