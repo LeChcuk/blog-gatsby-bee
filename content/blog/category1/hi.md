@@ -1,7 +1,10 @@
 ---
-title: 'hi'
-date: 2021-06-08 12:21:13
+title: HIHIHI
+date: 2020-03-18 22:03:94
 category: 'category1'
+thumbnail: 'https://github.com/pjw9412/blog-gatsby-bee/blob/ded70512fe086248c9f9e7fa3d1baa197d975d66/content/blog/category1/images/hello.png'
+description: '테스트1'
+tags: ['BCSD', '회고']
 draft: false
 ---
 
