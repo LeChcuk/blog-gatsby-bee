@@ -2,7 +2,7 @@
 title: 'Welcome Bee starter'
 date: 2020-07-04 12:21:13
 category: 'development'
-thumbnail: 'https://images.hexdrinker.dev/thumbnails/aws.png'
+thumbnail: 'https://gatsby-blog-images.s3.ap-northeast-2.amazonaws.com/dotBlog.png'
 description: '테스트2'
 draft: false
 ---

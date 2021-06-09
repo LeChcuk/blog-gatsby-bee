@@ -1,12 +1,14 @@
 ---
-title: HIHIHI
+title: MarkDown 문법 정리
 date: 2020-03-18 22:03:94
-category: 'category1'
-thumbnail: 'https://github.com/pjw9412/blog-gatsby-bee/blob/ded70512fe086248c9f9e7fa3d1baa197d975d66/content/blog/category1/images/hello.png'
-description: '테스트1'
+category: 'study'
+thumbnail: 'https://gatsby-blog-images.s3.ap-northeast-2.amazonaws.com/1200px-Markdown-mark.svg.png'
+description: '테스트2 (AWS S3)'
 tags: ['BCSD', '회고']
 draft: false
 ---
+
+![MarkDown logo](https://drive.google.com/uc?export=view&id=1KyoLjc8JuwWmvOb4T_k4B0-IyVGS_KfA)
 
 # 제목 1
 ## 제목 2
