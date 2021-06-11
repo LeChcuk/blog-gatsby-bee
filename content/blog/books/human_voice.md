@@ -1,12 +1,14 @@
 ---
-title: '📚 사람의 목소리는 빛보다 멀리 간다'
+title: '📚 공부란 무엇인가'
 date: 2020-07-02 16:21:13
 category: 'books'
-thumbnail: 'https://gatsby-blog-images.s3.ap-northeast-2.amazonaws.com/dotBlog.png'
-description: '테스트2'
-tags: ['BCSD', '회고']
+thumbnail: 'https://gatsby-blog-images.s3.ap-northeast-2.amazonaws.com/thumb_readingBook.gif'
+description: ''
+tags: ['김영민', '어크로스', '책']
 draft: false
 ---
+
+![](https://gatsby-blog-images.s3.ap-northeast-2.amazonaws.com/WhatIsStudy.jpg)
 
 개들이 낯선 대상을 보고 목놓아 짖어대는 것은 그 대상이 어떤 존재인지를 잘 알지 못해서다. 상대로부터 해를 입을 수 있다는 두려움 때문에 자연스럽게 상대를 기피하는 것이다. 무지에서 오는 두려움, 그리고 혐오. 나 역시도 중국에 대해서 무지했던 까닭에 중국에 관련된 것들 대부분을 싫어했다. 내게 중국이란 조지 오웰의 <1984>가 떠오를 만큼 독자적인 권력자에 의해 통제되고 억압받는 국가이고, 중국인이란 낮은 시민의식과 비위생적이고 청결하지 못한 면모를 지닌 사람들이었다. 하지만 무언가를 잘 알지도 못하면서 부정적인 편견만을 잔뜩 드러내는 것은 자신이 소인배임을 대놓고 알리는 꼴이 아닌가. 까더라도 알고 까야 한다.
 

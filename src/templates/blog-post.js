@@ -31,7 +31,7 @@ export default ({ data, pageContext, location }) => {
   const { title: postTitle, date } = post.frontmatter
 
   return (
-    <Layout location={location} title={title}>
+    <Layout location={location} title={title} sizeStyle={28}>
       <Head title={postTitle} description={post.excerpt} />
       <PostTitle title={postTitle} />
       <PostDate date={date} />

@@ -8,23 +8,19 @@ import { rhythm } from '../utils/typography'
 
 import './index.scss'
 
-export const Layout = ({ location, title, children }) => {
+// sizeStyle을 통해 블로그 중앙 너비를 조절한다.
+// 게시글(src/templates/blog-post.js)에서는 24rem으로 좁게, 메인 화면에서는 40.5 default 로 넓게.
+export const Layout = ({ location, title, sizeStyle=40.5, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
 
   return (
     <React.Fragment>
       <Top title={title} location={location} rootPath={rootPath} />
       <div
-        // style={{
-        //   marginLeft: `auto`,
-        //   marginRight: `auto`,
-        //   maxWidth: rhythm(24),
-        //   padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
-        // }}
         style={{
           marginLeft: `auto`,
           marginRight: `auto`,
-          maxWidth: rhythm(40.5),
+          maxWidth: rhythm(sizeStyle),
           padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
         }}
       >

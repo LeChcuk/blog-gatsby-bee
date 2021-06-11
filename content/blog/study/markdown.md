@@ -1,14 +1,14 @@
 ---
-title: MarkDown 문법 정리
+title: '📝 MarkDown 문법 정리'
 date: 2021-06-10 01:03:31
 category: 'study'
-thumbnail: 'https://drive.google.com/uc?export=view&id=1KyoLjc8JuwWmvOb4T_k4B0-IyVGS_KfA'
-description: '테스트1 (Google Drive)'
+thumbnail: 'https://gatsby-blog-images.s3.ap-northeast-2.amazonaws.com/thumb_MarkDown.svg.png'
+description: '.md 문서 작성법을 알아보자'
 tags: ['마크다운', 'MarkDown', '.md']
 draft: false
 ---
 
-![MarkDown logo](https://drive.google.com/uc?export=view&id=1KyoLjc8JuwWmvOb4T_k4B0-IyVGS_KfA)
+![MarkDown logo](https://gatsby-blog-images.s3.ap-northeast-2.amazonaws.com/thumb_MarkDown.svg.png)
 
 
 # 1.마크다운이란?
@@ -25,7 +25,7 @@ HTML 등 다른 문서형태로의 변환이 용이하다.
 ## 2.1 제목
 제목은 `<h1>`~`<h6>` 태그로 변환된다.
 
-```sh
+```MarkDown
 # 제목 1
 ## 제목 2
 ### 제목 3
@@ -37,7 +37,7 @@ HTML 등 다른 문서형태로의 변환이 용이하다.
 제목1과 제목2는 아래와 같이 사용할수도 있다.
 
 
-```sh
+```MarkDown
 제목 1
 =====
 
@@ -58,7 +58,7 @@ HTML 등 다른 문서형태로의 변환이 용이하다.
 
 ## 2.3 목록(List)
 
-```sh
+```MarkDown
 1. 순서가 필요한 목록
 2. 순서가 필요한 목록
     - 순서가 필요하지 않은 목록(서브)
@@ -116,7 +116,7 @@ url 링크 | `<google.com/> & <example@example.com> ` | <https://google.com>
 블록 | \`\`\`html(코드 종류 기재) (코드 작성) \`\`\` | 
 
 
-```markdown
+```MarkDown
     ```html
     <a href="https://www.google.co.kr/" target="_blank">GOOGLE</a>
     ```
@@ -135,7 +135,7 @@ url 링크 | `<google.com/> & <example@example.com> ` | <https://google.com>
 
 ### - 표 구조
 
-```sh
+```MarkDown
 | First Header  | Second Header | Third Header         |
 | :------------ | :-----------: | -------------------: |
 | First row     | Data          | Very long data entry |
@@ -150,7 +150,7 @@ url 링크 | `<google.com/> & <example@example.com> ` | <https://google.com>
 | Third row     | Cell that spans across two columns  || -->
 
 ### - 열 병합(Column spanning)
-```sh
+```MarkDown
 | Column 1 | Column 2 | Column 3 | Column 4 |
 | -------- | :------: | -------- | -------- |
 | No span  | Span across three columns    |||
@@ -183,8 +183,9 @@ url 링크 | `<google.com/> & <example@example.com> ` | <https://google.com>
 
 본문의 특정 문구를 보충 설명하기 위한 용도. 주로 내용의 출처를 밝힐 때 사용.
 
-```sh
+```MarkDown
 에릭 레이먼드는 파이썬을 배운지 하루만에 원하는 프로그램을 작성할 수 있었다고 한다. [^myfootnote]
+
 [^myfootnote]: 에릭 레이먼드는 프로그래밍 경험이 많은 구루 프로그래머이다.  
 보통 사람은 파이썬을 배우고 사용하는 데 1주일 정도의 적응 시간이 필요할 것이다.
 ```
