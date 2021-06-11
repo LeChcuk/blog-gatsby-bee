@@ -12,7 +12,7 @@ draft: false
 
 SSG를 이해하기 위해 MPA/SPA, SSR/CSR을 먼저 살펴볼 것이다.
 
-## 1. MPA/SPA 웹 애플리케이션 구조
+# 1. MPA/SPA 웹 애플리케이션 구조
 
 MPA(Multiple Page Applicaiton)는 다수의 페이지로 구성되어 요청이 들어올 때마다 정적 리소스를 반환해주는 방식의 웹 애플리케이션이다. 버튼 클릭과 같은 사소한 요청이 들어와도 페이지 전체를 리렌더링 해야하며, 이 과정에서 화면 깜빡임 현상이 발생한다.
 
@@ -39,7 +39,7 @@ SPA는 브라우저 안에서 동작하는 앱으로 최초 요청시 서버로�
 * 초기 구동이 느리다. 최초 요청시 모든 정적 리소스를 한번에 받기 때문.
 * SEO 관점에서 불리하다.
     - 최초 요청시 받아온 HTML 문서에는 import 구문으로 다른 JS 파일들을 불러올 뿐 사실상 내용은 전무해서 웹 크롤러에 의한 크롤링이 어렵기 떄문.
-* 보안에 취약한 편(MAP와 비교했을 때)
+* 보안에 취약한 편(MPA와 비교했을 때)
     - clientside script를 통해서 Cross-Site Scripting(XSS) 공격을 당할 수 있다.
  
 #### MPA의 장점
@@ -54,7 +54,7 @@ SPA는 브라우저 안에서 동작하는 앱으로 최초 요청시 서버로�
 * 화면 깜빡임.
 
 
-## 2. SSR/CSR 렌더링 방식
+# 2. SSR/CSR 렌더링 방식
 ![SSR](./images/ssr.png)
 SSR(Sever Side Rendering)
 
@@ -66,8 +66,12 @@ CSR(Client Side Rendering)
 
 하나의 페이지에서 여러 페이지를 보여준다는 것은 자바스크립트를 이용해서 페이지의 일부 혹은 전체를 갈아치우는 것이다. 여러 개의 .js파일이 하나의 거대한 .js파일로 번들링되어 SPA를 이룬다고 보아도 무방하다.
 
-## 3. SSG (Static Stie Generator)
-지금까지 살펴본 MPA(SSR), SPA(CSR)의 장점을 버무리고 싶다. SPA 구조로 제작하여 화면 깜빡임 없이 다양한 인터랙션을 빠르게 처리해내면서도, SSR 방식처럼 초기 로딩이 빠르고 SEO에도 무리가 없는 웹 사이트를 제작할 수 있다면 더할나위 없겠다.
+![Renderings](./images/Renderings.png)
+렌더링 방식을 세분화하자면 위와 같은 것으로 보인다. 참고만 하도록 하자.
+
+
+# 3. SSG (Static Stie Generator)
+지금까지 살펴본 MPA(SSR), SPA(CSR)의 장점을 버무리고 싶다. SPA 구조로 제작하여 화면 깜빡임 없이 다양한 인터랙션을 빠르게 처리해내면서도, SSR 방식처럼 초기 로딩이 빠르고 SEO에도 무리가 없는 웹 사이트를 제작할 수 있다면 더할 나위가 없겠다.
 
 이럴 때 React와 같은 CSR에 최적화된 라이브러리를 Gatsby 또는 Next.js 같은 SSG 프레임워크와 함께 사용하면 된다. Gatsby와 Next.js는 구체적인 작동 방식은 다르지만, pre-rendering 기법을 통해 정적으로 웹페이지를 미리 생성해두고 서버에 배포해두었다가 클라이언트의 요청에 응답하는 방식으로 초기 로딩을 단축하는 구조인 것으로 보인다. 즉, 최초 요청시 SSR 방식처럼 빌드 타임에 pre-render한 페이지를 클라이언트에게 전달하고, 이후에는 CSR 방식으로 동작한다.
 
@@ -76,9 +80,9 @@ CSR(Client Side Rendering)
 
 gatsby 공식 홈페이지에서 정의한 SSG는, MarkDown을 비롯한 텍스트 파일 등을 source로 받아 HTML 페이지를 만들어내는 응용 프로그램이라고 한다. SSG는 앞서 언급한 pre-rendering 기능 이외에도 웹 페이지 개설, SEO 최적화, 보안 등 여러 역할을 수행하는 것 같다.
 
-## 4. 결론
+# 결론
 
-전통적인 웹 사이트 구조 방식인 MPA, 현대적인 웹 사이트 구조 방식인 SPA의 장단점과 내부 작동 방식을 살펴보았다. MPA는 SSR 방식으로, SPA는 CSR 방식으로 렌더링한다는 점을 배웠다. 만약 당신이 React, Vue, Angular를 이용한 SPA 구조의 웹사이트를 제작한다면 CSR 렌더링 방식의 단점들과 마주할 것이다. 이때 gatsby, Next.js, Hugo, Jekyll... 과 같은 SSG의 도움을 받아 제작하면 좀 더 짱짱한 웹 사이트를 만들 수 있을 것이다.
+전통적인 웹 사이트 구조 방식인 MPA, 현대적인 웹 사이트 구조 방식인 SPA의 장단점과 내부 작동 방식을 살펴보았다. MPA는 SSR 방식으로, SPA는 CSR 방식으로 렌더링한다는 점을 배웠다. 만약 당신이 React, Vue, Angular를 이용한 SPA 구조의 웹사이트를 제작한다면 CSR 렌더링 방식의 단점들과 마주할 것이다. 이때 gatsby, Next.js, Hugo, Jekyll 과 같은 SSG의 도움을 받아 제작하면 좀 더 짱짱한 웹 사이트를 만들 수 있을 것이다.
 
 
 
@@ -91,6 +95,10 @@ gatsby 공식 홈페이지에서 정의한 SSG는, MarkDown을 비롯한 텍스�
 [SPA란?](https://yngmanie.space/posts/spa-mpa)
 
 [JAMStack과 SSG (Definition of JAMStack and SSG)](https://ksrae.github.io/javascript/jamstackssg/)
+
+[[개발상식]SSR vs CSR 당신의 선택은? (feat. 웹의 변천사)](https://velog.io/@kysung95/SSR-vs-CSR-%EB%8B%B9%EC%8B%A0%EC%9D%98-%EC%84%A0%ED%83%9D%EC%9D%80-feat.-ssg)
+
+[웹 렌더링](https://developers.google.com/web/updates/2019/02/rendering-on-the-web?hl=ko)
 
 
 

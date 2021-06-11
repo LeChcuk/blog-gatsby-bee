@@ -3,7 +3,7 @@ title: '👨‍💻 블로그 제작 일지(1)'
 date: 2021-06-12 12:21:13
 category: 'development'
 thumbnail: 'https://gatsby-blog-images.s3.ap-northeast-2.amazonaws.com/dotBlog.png'
-description: '블로그 제작 과정'
+description: '그치만.. 이렇게라도 기록해 두지 않으면 까먹고 말 게 분명한걸'
 tags: ['JAM Stack', 'SSG', 'Gatsby', 'Netlify']
 draft: false
 ---
