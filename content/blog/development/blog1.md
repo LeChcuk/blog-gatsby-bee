@@ -50,7 +50,7 @@ gatsby develop
 `localhost:8000/sitemap.xml` 에 접속하여 sitempa이 생성된 것을 확인
 
 
-## Google Search 콘솔 등록
+## Google Search 콘솔에 등록하기
 
 1. [Google Search Console]에 접속
 2. 우측 URL 접두어를 선택하고 인증용 html 파일을 다운
@@ -76,16 +76,22 @@ gatsby serve
 
 > robots.txt는 검색로봇에게 사이트 및 웹페이지를 수집할 수 있도록 허용하거나 제한하는 국제 권고안입니다.
 
-`yarn build` `gatsby serve` 입력 후 `http://localhost:9000/robots.txt`에 접속하여 확인. 깃에 커밋하여 netlify에 publish된 것을 확인.
-
 ## robots.txt 작성
 `npm add gatsby-plugin-robots-txt` 
+
+`yarn build` `gatsby serve` 입력 후 `http://localhost:9000/robots.txt`에 접속하여 확인. 깃에 커밋하여 netlify에 publish된 것을 확인.
+
+## 네이버 웹 마스터에 등록하기
+네이버 웹 마스터 [사이트 등록 페이지]
+
+
+
 
 
 [블로그]: (https://dyjh-blog.netlify.app/posts/2020-gatsby-blog-seo)
 [Google Search Console]: (https://search.google.com/search-console/about?hl=ko)
 [네이버 사이트 간단 체크]: (https://searchadvisor.naver.com/tools/sitecheck)
-
+[사이트 등록 페이지]: (https://searchadvisor.naver.com/console/board)
 # References
 
 https://blog.lgcns.com/2336
