@@ -84,8 +84,21 @@ body.dark {
   }
 
   // post
-  blockquote {
-    border-left: 4px solid rgba(255, 255, 255, 0.822);
+  blockquote{
+    color:#808080;
+    border-left:none;
+    position: relative;
+    padding:12px 8px 0 36px;
+    &:before{
+      background-image: url(./quote_dark.png);
+      width: 22px;
+      height: 22px;
+      left:4px;
+      top: 16px;
+      position: absolute;
+      background-size: contain;
+      content:"";
+    }
   }
 
   h1,

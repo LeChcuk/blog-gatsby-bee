@@ -2,6 +2,25 @@ body.light {
   background-color: $light-background-color;
   text-shadow: $light-text-shadow;
 
+  blockquote{
+    color:#808080;
+    border-left:none;
+    position: relative;
+    padding:12px 8px 0 36px;
+    &:before{
+      background-image: url(./quote.png);
+      width: 22px;
+      height: 22px;
+      left:4px;
+      top: 16px;
+      position: absolute;
+      background-size: contain;
+      content:"";
+    }
+  }
+
+
+
   .post{
     box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.1);
     

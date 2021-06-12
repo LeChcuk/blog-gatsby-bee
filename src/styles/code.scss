@@ -22,6 +22,60 @@ blockquote {
   color: $blockquote-text-color;
 }
 
+div .gatsby-highlight{
+  position: relative;
+  &[data-language]::after{
+    content: attr(data-language);
+    color:#fff;
+    background: #9b9b9b;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size:14px;
+    font-weight: 600;
+    padding: 2px 7px;
+    text-align: center;
+    border-radius: 2px;
+  }
+  
+  &[data-language=scss]::after,
+  &[data-language=sass]::after{
+    background: #cd669a;
+  }
+  &[data-language=css]::after{
+    background: #1790d2;
+  }
+  &[data-language=vue]::after{
+    background: #47b784;
+  }
+  &[data-language=svelte]::after{
+    background: #ff3e00;
+  }
+  &[data-language=react]::after{
+    background: #282b2e;
+    color:#61dafb;
+  }
+  &[data-language=json]::after{
+    background: #9b9b9b;
+  }
+  &[data-language=javascript]::after{
+    background: #f6dd3b;
+    color: #34495e;
+  }
+  &[data-languae=bash]::after,
+  &[data-language*='sh']::after{
+    background: #282b2e;
+    color:#20cf24;
+  }
+  &[data-language=typescript]::after{
+    background:#294d80;
+  }
+  &[data-language=html]::after{
+    background: #f2793d;
+  }
+}
+
+
 code[class*='language-'],
 pre[class*='language-'] {
   color: #e0e0e0;
@@ -55,7 +109,7 @@ pre[class*='language-']::-webkit-scrollbar {
 
 /* Code blocks */
 pre[class*='language-'] {
-  padding: 1.2em;
+  padding: 3.0em 1.2em;
   margin: 1.5em 0;
   overflow: auto;
   border-radius: 0.6em;

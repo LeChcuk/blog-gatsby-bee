@@ -95,7 +95,7 @@ url 링크 | `<google.com/> & <example@example.com> ` | <https://google.com>
 `<img>`로 변환된다.
 
 
-```sh
+```bash
 ![이미지 이름](이미지 주소 "부연 설명")
 ```
 종류 | 마크다운 | 실행결과
