@@ -29,6 +29,34 @@ npm start
 ## Git Repo 생성
 
 
+# 구글 SEO 등록하기
+
+잘 정리된 [블로그]를 적극 참고했다.
+
+```sh
+npm add gatsb netlify-plugin-sitemap
+```
+
+[Google Search Console]에 접속.
+
+```sh
+"scripts": {
+    "build": " gatsby build && cp google어쩌구.html public/",
+    ...
+  },
+```
+
+```sh
+yarn build
+gatsby serve
+```
+`localhost:9000/google어쩌구.html` 
+
+
+[블로그]: (https://dyjh-blog.netlify.app/posts/2020-gatsby-blog-seo)
+[Google Search Console]: (https://search.google.com/search-console/about?hl=ko)
+
+
 # References
 
 https://blog.lgcns.com/2336
