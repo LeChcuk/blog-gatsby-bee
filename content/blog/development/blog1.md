@@ -61,7 +61,7 @@ gatsby develop
 2. 우측 URL 접두어를 선택하고 인증용 html 파일을 다운
 3. html 파일을 루트폴더에 복사한뒤 package.json을 아래와 같이 수정
 
-```javascript
+```json
 // package.json
 "scripts": {
     "build": " gatsby build && cp google어쩌구.html public/",
