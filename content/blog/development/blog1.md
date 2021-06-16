@@ -90,7 +90,7 @@ gatsby serve
 ## 네이버 웹 마스터에 등록하기
 네이버 웹 마스터 [사이트 등록 페이지] 에서 sitemap.html을 다운받고 구글에 등록했을 때와 똑같이 등록하면 된다.
 
-## 결론
+# 결론
 다음엔 ToC(Table of Contents), 맨 위로가기 버튼을 추가하는 과정을 잘 정리해서 올려보자.
 
 [gatsby-starter-bee]:https://github.com/JaeYeopHan/gatsby-starter-bee
