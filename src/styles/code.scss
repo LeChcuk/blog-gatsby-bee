@@ -22,8 +22,25 @@ blockquote {
   color: $blockquote-text-color;
 }
 
+div .filename{
+  // content: attr(fn);
+  // background-color: #00e676;
+  margin-top:-45px;
+  &::before{
+    content:attr(fn);
+    background: #0687f0;
+    position: relative;
+    top:42px;
+    z-index: 1;
+    font-size:14px;
+    font-weight: 600;
+  }
+
+}
+
 div .gatsby-highlight{
   position: relative;
+
   &[data-language]::after{
     content: attr(data-language);
     color:#fff;
@@ -51,7 +68,8 @@ div .gatsby-highlight{
   &[data-language=svelte]::after{
     background: #ff3e00;
   }
-  &[data-language=react]::after{
+  &[data-language=react]::after,
+  &[data-language=jsx]::after{
     background: #282b2e;
     color:#61dafb;
   }
@@ -109,7 +127,7 @@ pre[class*='language-']::-webkit-scrollbar {
 
 /* Code blocks */
 pre[class*='language-'] {
-  padding: 3.0em 1.2em;
+  padding: 2.5em 1.2em;
   margin: 1.5em 0;
   overflow: auto;
   border-radius: 0.6em;
@@ -137,7 +155,7 @@ pre[class*='language-'] {
 .token.prolog,
 .token.doctype,
 .token.cdata {
-  color: #616161;
+  color: #808080;
 }
 
 .token.punctuation {

@@ -121,12 +121,19 @@ url 링크 | `<google.com/> & <example@example.com> ` | <https://google.com>
     <a href="https://www.google.co.kr/" target="_blank">GOOGLE</a>
     ```
 
-    ```css
+    ```css {2}
     .list > li {
     position: absolute;
     top: 40px;
     }
     ```
+```
+
+```css {2}
+    .list > li {
+    position: absolute;
+    top: 40px;
+    }
 ```
 
 ## 2.7 표(Table)
