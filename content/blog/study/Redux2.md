@@ -16,7 +16,7 @@ draft: false
 
 ![](./images/redux/react-redux2.jpeg)
 
-## Presentational & Container 컴포넌트
+## Presentational & Container 컴포넌트aaaaaa
 리액트-리덕스 프로젝트에서는 프레젠테이셔널 컴포넌트와 컨테이너 컴포넌트를 분리하는 패턴을 주로 사용한다고 한다. `프레젠테이셔널 컴포넌트`는 주로 상태 관리가 이루어지지 않고, 그저 props를 받아 와서 화면에 UI를 보여 주기만 하는 컴포넌트를 말한다. `컨테이너 컴포넌트`는 리덕스와 연동되어 리덕스로부터 상태를 받아오기도 하고 리덕스 스토어에 액션을 디스패치하기도 하는 컴포넌트를 말한다.
 ![사진 출처 : https://the-1.tistory.com/8](./images/redux/react-redux.png)
 
@@ -47,7 +47,9 @@ cd react-redux-tutorial
 yarn add redux react-redux
 ```
 
+
 # 2. UI(Presentational 컴포넌트) 준비하기
+
 Todos.js 파일에 TodoItem, Todos 두 개 컴포넌트를 작성하였는데 취향에 따라 파일 두 개로 분리해도 좋다. Counter, Todos 컴포넌트를 작성한 후 App 컴포넌트에 렌더링한다. 이후 브라우저에 정상 출력된 것을 확인.
 
 ```jsx{3}
@@ -136,9 +138,13 @@ export default App;
 ```
 
 # 3. 모듈 만들기
+
 리덕스 관련 코드를 작성한다. 모듈에는 액션 타입/액션 생성자/리듀서 코드를 작성해야 한다.
+
 ## counter 모듈 만들기
+
 ### 1) 액션 타입 정의하기
+
 ```jsx
 // modules/counter.js
 const INCREASE = 'counter/INCREASE';
@@ -148,6 +154,7 @@ const DECREASE = 'counter/DECREASE';
 
 
 ### 2) 액션 생성자 만들기
+
 ```jsx {5,6}
 // modules/counter.js
 const INCREASE = 'counter/INCREASE';
@@ -159,6 +166,7 @@ export const decrease = () => ({ type: DECREASE });
 액션 생성자에는 expxort 키워드를 붙여서 추후 다른 파일에서 불러올 수 있도록 한다.
 
 ### 3) 초기 상태 및 리듀서 함수 만들기
+
 ```jsx
 // modules/counter.js
 (...)
@@ -187,7 +195,9 @@ export default counter;
 리듀서 함수는 현재 상태를 참조해서 상태를 업데이트하고 새로운 객체를 생성해서 반환하게끔 구성한다.
 
 ## todos 모듈 만들기
+
 ### 1) 액션 타입 정의하기
+
 ```jsx
 // modules/todos.js
 const CHANGE_INPUT = 'todos/CHANGE_INPUT'; // 인풋 값을 변경
@@ -229,6 +239,7 @@ export const remove = id => ({
 ```
 
 ### 3) 초기 상태 및 리듀서 함수 만들기
+
 ```jsx
 // modules/todos.js
 (...)
@@ -299,6 +310,7 @@ export default rootReducer;
 
 
 # 4. 리액트 App에 Redux 적용하기
+
 ```jsx
 // src/index.js
 import React from 'react';
@@ -325,9 +337,11 @@ ReactDOM.render(
 PROVIDER??????????????????????
 
 # 5. Container Components 만들기
+
 컨테이너 컴포넌트는 리덕스 스토어와 연동되어 상태를 받아 오고...
 
 ## 1) CounterContainer 만들기
+
 ```jsx
 // containers/CounterContainer.js
 import React from 'react';
@@ -399,6 +413,8 @@ export default App;
 3. 스토어의 리듀서가 상태 변화를 야기하면 스토어와 `connect`되어 있는 `<CounterContainer>`가 mapStateToProps를 통해 전달받은 상태를 다시 modules/counter.js에 전달하고, 리렌더링 되어 화면에 출력되는 과정을 생각해볼 수 있다.
 
 ### connect 함수 간략화하기
+
+
 위에서 작성한 `connect` 함수 코드는 아래와 같이 간략하게 작성할 수 있다. 기존에는 mapStateToProps와 mapDispatchToProps를 미리 선언해 놓고 사용했다면, 아래는 connect 함수 내부에 익명 함수 형태로 선언하는 방식이다.
 
 ```jsx {7,8,9,10,11,12}
@@ -450,6 +466,8 @@ export default connect(
 ```
 
 ## 2) TodosContainer 만들기
+
+
 ```jsx
 import React from 'react';
 import { connect } from 'react-rdux';
