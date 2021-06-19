@@ -10,13 +10,13 @@ draft: false
 
 *본 게시글은 책 <리액트를 다루는 기술 개정판> 17장 '리덕스를 사용하여 리액트 애플리케이션 상태 관리하기'를 정리한 내용입니다*
 
-# 1. 프로젝트 소개aaaaaaaaaaaaaaaaaaaaaaaaaaaa
+# 1. 프로젝트 소개
 
 간단한 프로젝트를 통해서 리덕스 사용법을 익혀보도록 하자. 숫자를 올리고 내릴수 있는 카운터 기능, 할 일 을 등록하고 체크하고 삭제할 수 있는 TodoList 기능을 react + redux 조합으로 구현한 프로젝트다. 완성된 모습은 아래와 같다.
 
 ![](./images/redux/react-redux2.jpeg)
 
-## Presentational & Container 컴포넌트aaaaaaaaaaa
+## Presentational & Container 컴포넌트
 리액트-리덕스 프로젝트에서는 프레젠테이셔널 컴포넌트와 컨테이너 컴포넌트를 분리하는 패턴을 주로 사용한다고 한다. `프레젠테이셔널 컴포넌트`는 주로 상태 관리가 이루어지지 않고, 그저 props를 받아 와서 화면에 UI를 보여 주기만 하는 컴포넌트를 말한다. `컨테이너 컴포넌트`는 리덕스와 연동되어 리덕스로부터 상태를 받아오기도 하고 리덕스 스토어에 액션을 디스패치하기도 하는 컴포넌트를 말한다.
 ![사진 출처 : https://the-1.tistory.com/8](./images/redux/react-redux.png)
 
