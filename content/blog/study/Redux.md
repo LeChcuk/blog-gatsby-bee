@@ -109,7 +109,7 @@ const store = createStore(reducer);
 디스패치는 스토어의 내장 함수 중 하나로, 액션을 발생시키는 트리거 역할을 맡는다. `dispatch(action)`과 같은 형태로 호출한다.
 
 ### 6) 구독(Subscribe)
-구독은 스토어의 내장 함수 중 하나로, 스토어에 의한 상태 업데이트가 발생할 때마다 구독시 지정한 리스너 함수가 호출된다. 
+구독은 스토어의 내장 함수 중 하나로, 스토어에 의한 상태 업데이트가 발생할 때마다 구독시 지정한 리스너 함수가 호출된다.
 
 ```javascript
 const listener= () => {
@@ -119,6 +119,8 @@ const unsubscribe = store.subscribe(listener);
 
 unsubscribe(); // 추후 구독을 비활성화할 때 함수를 호출
 ```
+
+subscribe는 위와 같이 직접적으로 호출되기보다는 `react-redux` 패키지에서 제공하는 `connect()` 함수로 대체 사용되는 편이다. 
 
 # 3. 리덕스 구조
 앞서 배운 개념을 토대로 좀 더 상세한 리덕스 작동 구조를 알아보자.
