@@ -3,7 +3,7 @@ module.exports = {
   description: `Blog posted about ...`,
   author: `Lechuck`,
   introduction: `초보 개발자`,
-  siteUrl: `https://gatsby-starter-bee.netlify.com`, // Your blog site url
+  siteUrl: `https://lechuck.netlify.app`, // Your blog site url
   social: {
     twitter: ``, // Your Twitter account
     github: `pjw9412`, // Your GitHub account
@@ -12,11 +12,11 @@ module.exports = {
     linkedin: ``, // Your LinkedIn account
     instagram: ``, // Your Instagram account
   },
-  icon: `content/assets/felog.png`, // Add your favicon
+  icon: `content/assets/murray.png`, // Add your favicon
   keywords: [`blog`],
   comment: {
     disqusShortName: '', // Your disqus-short-name. check disqus.com.
-    utterances: 'JaeYeopHan/gatsby-starter-bee', // Your repository for archive comment
+    utterances: 'pjw9412/blog-gatsby-bee', // Your repository for archive comment
   },
   configs: {
     countOfInitialPost: 10, // Config your initial count of post
