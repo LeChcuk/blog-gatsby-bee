@@ -16,7 +16,7 @@ gatsby는 React + GraphQL을 기반으로 한 SSG(정적 사이트 생성기)다
 
 JBEE님이 만든 스타터 테마 [gatsby-starter-bee]를 이용해서 매우 쉽게 블로그를 만들 수 있었다.
 
-#### gatsby-starter-bee 설치 및 실행
+gatsby-starter-bee를 설치하고 실행한다.
 ```bash
 npm i -g gatsby-cli
 gatsby new my-blog-starter https://github.com/JaeYeopHan/gatsby-starter-bee
@@ -39,7 +39,7 @@ Github Repo를 생성한 뒤 Netlify에 접속하여 해당 Repo를 연동해주
 
 잘 정리된 [블로그]를 적극 참고했다.
 
-### Sitemap.xml 생성
+## Sitemap.xml 생성
 
 sitemap은 구글 웹 크롤러가 내 블로그를 크롤링하기 위한 이정표 역할을 한다고 한다.
 ```bash
@@ -55,7 +55,7 @@ gatsby develop
 ```
 `localhost:8000/sitemap.xml` 에 접속하여 sitempa이 생성된 것을 확인
 
-### Google Search 콘솔에 등록하기
+## Google Search 콘솔에 등록하기
 
 1. [Google Search Console]에 접속
 2. 우측 URL 접두어를 선택하고 인증용 html 파일을 다운

@@ -3,7 +3,6 @@ import s from './TableOfContents.scss';
 
 
 const TableOfContents = ({ toc,currentHeaderUrl }) => {
-
     const replaceItems = useMemo(() => {
         if (currentHeaderUrl) {
             return toc.replace(
@@ -11,7 +10,6 @@ const TableOfContents = ({ toc,currentHeaderUrl }) => {
                 `"${currentHeaderUrl}" class="isCurrent"`
             );
         } else {
-            console.log('else');
             return toc;
         }
     }, [currentHeaderUrl]);

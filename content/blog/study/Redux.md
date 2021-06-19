@@ -25,7 +25,7 @@ draft: false
 Redux는 React에 종속된 라이브러리가 아니어서 Vanilla-JS + Redux, Vue + Redux와 같은 다양한 활용이 가능하다.
 
 # 2. 리덕스 개념
-### 1) 액션(Action)
+## 1) 액션(Action)
 액션은 type 속성값을 가진 자바스크립트 객체다. 
 ```javascript
 {
@@ -51,7 +51,7 @@ Redux는 React에 종속된 라이브러리가 아니어서 Vanilla-JS + Redux, 
 ```
 액션 객체에 type 필드는 필수적으로 입력해야 한다. type 이외의 필드를 입력해서 상태 변화시 참고할 값들을 지정해줄 수 있다. 예를 들어, INCREASE시 diff 값을 참고해서 2씩 INCREASE 한다든가.
 
-### 2) 액션 생성자(Action Creator)
+## 2) 액션 생성자(Action Creator)
 액션 생성자는 액션 객체를 만들어주는 함수다.
 ```javascript
 function addTodo(data){
@@ -71,7 +71,7 @@ export const addTodo = data =>({
 
 액션 객체는 가급적 액션 생성자로 만드는 것이 좋다. 추후에 액션 객체의 구조를 변경할 일이 생길 경우 등에 이점을 가져다주기 때문이다. 액션 생성자는 `redux-actions` 라이브러리의 `createAction` 함수를 사용하여 더욱 간편하게 만들 수 있다. (다음 게시글 참조)
 
-### 3) 리듀서(Reducer)
+## 3) 리듀서(Reducer)
 리듀서는 상태를 어떻게 변화시킬지 정의하는 함수다. 리듀서는 현재 상태(state)와 액션을 파라미터로 전달받는다. 액션에 의거한 상태 변화 로직을 정의해두어서는, 전달받은 액션대로 상태를 업데이트하여 반환하는 함수다.
 
 ```javascript
@@ -94,7 +94,7 @@ function reducer(state = initialState, action){
 ```
 리듀서는 마찬가지로 `redux-actions` 라이브러리의 `handleActions` 함수를 사용하여 더욱 간편하게 만들 수 있다. 
 
-### 4) 스토어(store)
+## 4) 스토어(store)
 스토어는 컴포넌트 외부에 있는 상태 저장소다. 스토어 안에는 현재 애플리케이션 상태(state)와 리듀서가 들어가 있다. 스토어는 `dispatch`, `subscribe`, `getState`와 같은 내장함수를 갖는다. 
 
 ```javascript
@@ -105,10 +105,10 @@ import {createStore} from 'redux';
 const store = createStore(reducer);
 ```
 
-### 5) 디스패치(dispatch)
+## 5) 디스패치(dispatch)
 디스패치는 스토어의 내장 함수 중 하나로, 액션을 발생시키는 트리거 역할을 맡는다. `dispatch(action)`과 같은 형태로 호출한다.
 
-### 6) 구독(Subscribe)
+## 6) 구독(Subscribe)
 구독은 스토어의 내장 함수 중 하나로, 스토어에 의한 상태 업데이트가 발생할 때마다 구독시 지정한 리스너 함수가 호출된다.
 
 ```javascript
@@ -152,12 +152,12 @@ B는 Action을 dispatch 함수에 담아서 스토어에 전달한다.
 
 
 # 4. 리덕스 사용 원칙
-### 1) 단일 스토어
+## 1) 단일 스토어
 하나의 애플리케이션에 하나의 스토어만. 애플리케이션 내 여러개의 스토어를 둘 수는 있지만 상태 관리가 복잡해질 수 있으므로 권장하지 않음. 
 
-### 2) 상태는 읽기 전용 상태
+## 2) 상태는 읽기 전용 상태
 리덕스 상태는 읽기 전용이다. 상탯값을 불변 객체로 관리해야 내부적으로 데이터가 변경되는 것을 감지할 수 있다.
-### 3) 리듀서는 순수 함수
+## 3) 리듀서는 순수 함수
 순수 함수는 부수 효과를 발생시키지 않아야 한다. 또한 같은 인수에 항상 같은 값을 반환해야 한다. 따라서 리듀서 내부에서 랜덤 값 생성, Date 함수 사용, 네트워크 요청 등은 금지된다.
 
 # 마무리

@@ -26,7 +26,7 @@ SPA는 브라우저 안에서 동작하는 앱으로 최초 요청시 서버로�
 
 
 
-#### SPA의 장점
+### SPA의 장점
 * 좋은 사용자 경험.
     - 화면 깜빡임(페이지 리로드)이 없다.
     - 속도가 빠르다. 최초 요청시 모든 정적 페이지를 다운받기 때문에 사용중에 응답을 기다리느라 시간을 낭비하는 경우가 없다.
@@ -35,19 +35,19 @@ SPA는 브라우저 안에서 동작하는 앱으로 최초 요청시 서버로�
 * local storage를 효과적으로 cache할 수 있다. 
     - 처음에 모든 데이터를 받아서 저장하고 사용하는 방식이기 때문에 오프라인 상태에서도 작동한다.
 
-#### SPA의 단점
+### SPA의 단점
 * 초기 구동이 느리다. 최초 요청시 모든 정적 리소스를 한번에 받기 때문.
 * SEO 관점에서 불리하다.
     - 최초 요청시 받아온 HTML 문서에는 import 구문으로 다른 JS 파일들을 불러올 뿐 사실상 내용은 전무해서 웹 크롤러에 의한 크롤링이 어렵기 떄문.
 * 보안에 취약한 편(MPA와 비교했을 때)
     - clientside script를 통해서 Cross-Site Scripting(XSS) 공격을 당할 수 있다.
  
-#### MPA의 장점
+### MPA의 장점
 * SEO 관점에서 유리하다. 서버에서 이미 렌더링된 HTML 문서가 전달되므로.
 * 초기 구동이 빠르다.
 * 사용자 정보를 서버측 세션으로 관리하기에 보안에 유리한 편.
 
-#### MPA의 단점
+### MPA의 단점
 * 개발의 복잡성.
     - 프론트엔드/백엔드가 서로 밀접하게 연관되어 있다.
     - SPA보다 복잡한 규모.
@@ -86,7 +86,7 @@ gatsby 공식 홈페이지에서 정의한 SSG는, MarkDown을 비롯한 텍스�
 
 
 
-## References 
+# References 
 
 [CSR(Client-Side-Rendering) vs SSR(Server-Side-Rendering) (feat. React를 중점으로)](https://velog.io/@longroadhome/FE-CSRClient-Side-Rendering-vs-SSRServer-Side-Rendering-feat.-React%EB%A5%BC-%EC%A4%91%EC%A0%90%EC%9C%BC%EB%A1%9C)
 
