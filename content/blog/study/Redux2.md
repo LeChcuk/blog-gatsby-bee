@@ -1,10 +1,10 @@
 ---
 title: '📝 Redux(2) - 활용 예시'
-date: 2021-06-17 21:33:13
+date: 2021-06-18 21:33:13
 category: 'study'
 thumbnail: 'https://gatsby-blog-images.s3.ap-northeast-2.amazonaws.com/thumb_redux.png'
 description: '코드를 중심으로 살펴보는 Redux 활용법'
-tags: ['Redux', 'react-redux']
+tags: ['Redux','react-redux','react-actions']
 draft: false
 ---
 
@@ -12,7 +12,7 @@ draft: false
 
 # 1. 프로젝트 소개
 
-간단한 프로젝트를 통해서 리덕스 사용법을 익혀보도록 하자. 숫자를 올리고 내릴수 있는 카운터 기능, 할 일 을 등록하고 체크하고 삭제할 수 있는 TodoList 기능을 react + redux 조합으로 구현한 프로젝트다. 완성된 모습은 아래와 같다.
+간단한 프로젝트를 통해서 리덕스 사용법을 익혀보도록 하자. 숫자를 올리고 내릴수 있는 카운터 기능과 할 일을 등록하고 체크하고 삭제할 수 있는 TodoList 기능을 react + redux 조합으로 구현한 프로젝트다. 완성된 모습은 아래와 같다.
 
 ![](./images/redux/react-redux2.jpeg)
 
@@ -267,7 +267,7 @@ function todos(state = initialState, action){
     switch(action.type){
         case CHANGE_INPUT:
             return{
-                ...state,
+                ...state,   // 상탯값은 불변 객체로 관리해야 하므로 수정할 때마다 전개 연산자(...)를 활용해 새로운 객체를 생성한다.
                 input: action.input
             };
         case INSERT:
@@ -288,7 +288,7 @@ function todos(state = initialState, action){
                 todos: state.todos.filter(todo => todo.id !== action.id)
             };
         default:
-            return state;
+            return state;   // 처리할 액션이 없다면 상탯값을 변경하지 않는다.
     }
 }
 
@@ -383,7 +383,7 @@ CounterContainer 컴포넌트는 `react-redux`에서 제공하는 `connect` 함�
 
 `connect(mapStateToProps, mapDispatchToProps)(연동할 컴포넌트)`
 
-`mapStateToProps`는 리덕스 스토어 안의 **상태**를 컴포넌트의 props로 넘겨주기 위해 설정하는 함수이고, `mapDispatchToProps`는 **액션 생성 함수**를 컴포넌트의 props로 넘겨주기 위해 사용하는 함수다. 
+`mapStateToProps`는 리덕스 스토어 안의 **상태**를 컴포넌트의 props로 넘겨주기 위해 설정하는 함수이고, `mapDispatchToProps`는 **액션 생성 함수(혹은 dispatch)**를 컴포넌트의 props로 넘겨주기 위해 사용하는 함수다. 
 
 즉, '연동할 컴포넌트' 부분에 `<CounterContainer>` 컴포넌트를 넣으면 `스토어`의 **상태**와 **액션 생성 함수**가 props로 CounterContainer 컴포넌트에 전해지는 것이다. 위 예제에선 mapStateToProps에서 반환한 number, mapDispatchToProps에서 반환한 increase()와 decrease()가 CounterContainer의 props로 전해진다.
 
@@ -824,4 +824,6 @@ const todos = handleActions(
 react 프로젝트에 redux를 적용하여 상태 관리를 해보았다. redux에서 제공하는 `createStore` 함수의 사용법, react-redux에서 제공하는 `<Provider>` 컴포넌트와 `connect` 함수의 사용법 등을 숙지하도록 하자. redux-actions에서 제공하는 `createAction` 함수와 `handleActions` 함수도 코드 가독성을 높이기 위해 상황에 따라 응용하면 좋을것이다.
 
 사실 이렇게 작은 규모의 프로젝트에서는 redux 본연의 파워를 체감할 수 없다고 한다. 좀 더 큰 규모의 프로젝트에서 리덕스를 활용하여 상태를 관리해보면 많은 공부가 될 것 같다.
+
+[리덕스 잘 쓰고 계시나요?](https://ridicorp.com/story/how-to-use-redux-in-ridi/) 글을 참고해서 리덕스 개발 트렌드를 잘 따라가도록 하자. `redux-toolkit`이 정말 유용해보인다. 이 글의 저자 또한 벨로퍼트 김민준 님이라는 게 조금 놀랍다.
 

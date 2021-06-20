@@ -23,6 +23,14 @@ body.dark {
     background: $dark-theme-gradient;
   }
 
+  .toc-container{
+    .toc-content{
+      a{
+        color:#fff;
+      }
+    }
+  }
+
   // home
   .home-header {
     color: $dark-light-font-color;

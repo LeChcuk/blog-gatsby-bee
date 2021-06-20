@@ -38,6 +38,7 @@ Github Repo를 생성한 뒤 Netlify에 접속하여 해당 Repo를 연동해주
 # 4. 구글 SEO 최적화
 
 잘 정리된 [블로그]를 적극 참고했다.
+[Gatsby Blog 검색엔진 최적화](https://www.jungyu.engineer/gatsby%20blog%20search%20engine%20optimization/)도 참고했다.
 
 ## Sitemap.xml 생성
 

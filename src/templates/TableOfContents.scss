@@ -3,18 +3,17 @@
         display: none;
     }
     position: absolute;
-    right:-25vw;
+    right:-27vw;
     height: 100%;
     top:200px;
     width: 400px;
     .toc-content{
         position: sticky;
-        top: 100px;
+        top: 70px;
         .toc{
             ul, ol{
                 list-style-type: none;
                 a {
-                    color:#34495e;
                     &:hover{
                         text-decoration: underline;
                     }

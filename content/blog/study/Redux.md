@@ -72,14 +72,14 @@ export const addTodo = data =>({
 액션 객체는 가급적 액션 생성자로 만드는 것이 좋다. 추후에 액션 객체의 구조를 변경할 일이 생길 경우 등에 이점을 가져다주기 때문이다. 액션 생성자는 `redux-actions` 라이브러리의 `createAction` 함수를 사용하여 더욱 간편하게 만들 수 있다. (다음 게시글 참조)
 
 ## 3) 리듀서(Reducer)
-리듀서는 상태를 어떻게 변화시킬지 정의하는 함수다. 리듀서는 현재 상태(state)와 액션을 파라미터로 전달받는다. 액션에 의거한 상태 변화 로직을 정의해두어서는, 전달받은 액션대로 상태를 업데이트하여 반환하는 함수다.
+리듀서는 액션이 발생했을 때 새로운 상탯값을 만드는 함수다. 리듀서는 현재 상태(state)와 액션을 파라미터로 전달받는다. 액션에 의거한 상태 변화 로직을 정의해두어서는, 전달받은 액션대로 상태를 업데이트하여 반환하는 함수다.
 
 ```javascript
 const initialState = {
     counter:1
 };
-// reducer 함수가 맨 처음 호출될 때는 state값이 undefined이다.
-// state가 undefined일 때는 initialState로 초기화
+// 리덕스는 스토어를 생성할 때 상탯값이 없는 상태로 리듀서를 호출하므로,
+// 매개변수의 기본값을 사용해서 초기 상탯값을 정의한다.
 function reducer(state = initialState, action){
     switch(action.type){
         case INCREMENT:
@@ -95,7 +95,7 @@ function reducer(state = initialState, action){
 리듀서는 마찬가지로 `redux-actions` 라이브러리의 `handleActions` 함수를 사용하여 더욱 간편하게 만들 수 있다. 
 
 ## 4) 스토어(store)
-스토어는 컴포넌트 외부에 있는 상태 저장소다. 스토어 안에는 현재 애플리케이션 상태(state)와 리듀서가 들어가 있다. 스토어는 `dispatch`, `subscribe`, `getState`와 같은 내장함수를 갖는다. 
+스토어는 컴포넌트 외부에서 리덕스의 상탯값을 가지는 객체다. 스토어 안에는 현재 애플리케이션 상태(state)와 리듀서가 들어가 있다. 스토어는 `dispatch`, `subscribe`, `getState`와 같은 내장함수를 갖는다. 
 
 ```javascript
 import {createStore} from 'redux';
@@ -109,7 +109,7 @@ const store = createStore(reducer);
 디스패치는 스토어의 내장 함수 중 하나로, 액션을 발생시키는 트리거 역할을 맡는다. `dispatch(action)`과 같은 형태로 호출한다.
 
 ## 6) 구독(Subscribe)
-구독은 스토어의 내장 함수 중 하나로, 스토어에 의한 상태 업데이트가 발생할 때마다 구독시 지정한 리스너 함수가 호출된다.
+구독은 스토어의 내장 함수 중 하나로, 스토어에 의한 상태 업데이트가 발생할 때마다 구독시 지정한 리스너 함수가 호출된다. 상탯값 변경 여부를 확인하기 위해 쓰인다.
 
 ```javascript
 const listener= () => {
@@ -171,6 +171,8 @@ B는 Action을 dispatch 함수에 담아서 스토어에 전달한다.
 [리덕스, 왜 쓸까? 쉽고 편하게 사용하기 위한 발악](https://velopert.com/3528)
 
 <리액트를 다루는 기술 개정판>(김민준, 2019)
+
+<실전 리액트 프로그래밍 개정판>(이재승, 2020)
 
 
 
