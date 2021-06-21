@@ -3,7 +3,7 @@ title: '📝 Redux(3) - 미들웨어 redux-thunk'
 date: 2021-06-20 21:33:13
 category: 'study'
 thumbnail: 'https://gatsby-blog-images.s3.ap-northeast-2.amazonaws.com/thumb_redux.png'
-description: '리덕스 미들웨어란 무엇인지 알아보고, redux-thunk를 사용해보자'
+description: '리덕스 미들웨어란 무엇인지 알아보고 redux-thunk를 사용해보자'
 tags: ['Redux','middleware','redux-thunk']
 draft: false
 ---
