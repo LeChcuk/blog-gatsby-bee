@@ -1,6 +1,7 @@
 body.light {
   background-color: $light-background-color;
   text-shadow: $light-text-shadow;
+  overflow-x: clip;
 
   blockquote{
     color:#808080;
