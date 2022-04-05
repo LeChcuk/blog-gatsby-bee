@@ -2,13 +2,11 @@
 title: '📝 Redux(4) - 미들웨어 redux-saga'
 date: 2021-06-21 21:33:13
 category: 'study'
-thumbnail: ./images/redux/thumb_redux.png
+thumbnail: 'https://gatsby-blog-images.s3.ap-northeast-2.amazonaws.com/thumb_redux.png'
 description: 'thunk에 이어 saga까지 사용해보면 미들웨어에 대한 감을 잡을 수 있을 것 같다'
 tags: ['Redux','middleware','redux-saga','ES6 Generator']
 draft: false
 ---
-
-# thumbnail: 'https://gatsby-blog-images.s3.ap-northeast-2.amazonaws.com/thumb_redux.png'
 
 ![](./images/redux/redux-saga1.JPG)
 *본 게시글은 책 <리액트를 다루는 기술 개정판> 18장 '리덕스 미들웨어를 통한 비동기 작업 관리'를 정리한 내용입니다*

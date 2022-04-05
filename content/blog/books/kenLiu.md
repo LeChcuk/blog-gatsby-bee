@@ -2,7 +2,7 @@
 title: '📚 어딘가 상상도 못 할 곳에, 수많은 순록 떼가'
 date: 2021-08-02 20:36:13
 category: 'books'
-thumbnail: 'https://gatsby-blog-images.s3.ap-northeast-2.amazonaws.com/thumb_book_good.gif'
+thumbnail: 'https://gatsby-blog-images.s3.ap-northeast-2.amazonaws.com/thumb_book2.gif'
 description: '종이동물원 안 본 흑우 없제~'
 tags: ['켄 리우', '황금가지']
 draft: false

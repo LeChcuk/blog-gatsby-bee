@@ -2,7 +2,7 @@
 title: '📝 React Redux 코드 리팩토링 '
 date: 2021-08-20 22:57:13
 category: 'study'
-thumbnail: 'https://gatsby-blog-images.s3.ap-northeast-2.amazonaws.com/react-redux.png'
+thumbnail: 'https://gatsby-blog-images.s3.ap-northeast-2.amazonaws.com/thumb_redux.png'
 description: '코드짤 때 헷갈리기 쉬운 문법들을 정리했다'
 tags: ['redux-actions', 'Immer','Redux-toolkit']
 draft: false
