@@ -2,7 +2,7 @@
 title: '📝 React SSR(2) - 코드 스플리팅'
 date: 2021-07-05 16:57:13
 category: 'study'
-thumbnail: 'https://gatsby-blog-images.s3.ap-northeast-2.amazonaws.com/thumb_reactSSR.jpg'
+thumbnail: 'https://gatsby-blog-images.s3.ap-northeast-2.amazonaws.com/react_ssr.jpg'
 description: 'SSR에 코드 스플리팅 적용하기'
 tags: ['React.lazy','동적 import','Loadable Components']
 draft: false

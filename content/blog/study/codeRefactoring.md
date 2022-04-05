@@ -500,7 +500,6 @@ const WriteActionButtonsContainer = ({ history }) => {
 하지만 `useSelector`를 사용하여 리덕스 상태를 조회했을 때는 이 최적화 작업이 자동으로 이루어지지 않는다.
 React.memo를 컨테이너 컴포넌트에 사용하는 등의 신경을 써 주어야 한다.
 <br>
----
 
 # References
 
@@ -508,7 +507,7 @@ React.memo를 컨테이너 컴포넌트에 사용하는 등의 신경을 써 주
 
 [리덕스 잘 쓰고 계시나요?][1]
 
-[Redux Toolkit][2]
+[Redux Toolkit API][2]
 
 [1]:https://ridicorp.com/story/how-to-use-redux-in-ridi/
 [2]:https://redux-toolkit.js.org/
