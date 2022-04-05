@@ -47,11 +47,13 @@ export const writePost = createAction(WRITE_POST, ({ title, body, tags }) => ({
 }));
 ```
 
-이렇게 생성된 `writePost` 액션 생성자는 다른 컴포넌트에서 `dispatch(writePost({props 또는 state})` 형태로 사용한다. 그러면 다음과 같은 액션 객체가 생성된다.
+그러면 다음과 같은 액션 객체가 생성된다.
 
 ```
 { type: write/WRITE_POST, payload:{title:'', body:'', tags:''}}
 ```
+
+이렇게 생성된 `writePost` 액션 생성자는 다른 컴포넌트에서 `dispatch(writePost({props 또는 state})` 형태로 사용한다.
 
 ## 2) handleActions()
 
