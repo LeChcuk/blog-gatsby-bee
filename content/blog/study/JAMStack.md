@@ -2,7 +2,7 @@
 title: '📝 JAMstack과 정적 웹'
 date: 2021-06-12 02:10:13
 category: 'study'
-thumbnail: 'https://gatsby-blog-images.s3.ap-northeast-2.amazonaws.com/thumb_JAMstack.png'
+thumbnail: 'https://gatsby-blog-images.s3.ap-northeast-2.amazonaws.com/thumb_JAMstack.webp'
 description: '웹 개발 패러다임 JAMstack을 알아보자'
 tags: ['JAMstack','LAMP stack', 'SSG', 'Gatsby', 'Netlify']
 draft: false
