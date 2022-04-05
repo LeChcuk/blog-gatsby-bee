@@ -2,7 +2,7 @@
 title: '📚 넥스트 킬러앱'
 date: 2021-06-23 00:42:13
 category: 'books'
-thumbnail: 'https://gatsby-blog-images.s3.ap-northeast-2.amazonaws.com/thumb_book2.gif'
+thumbnail: 'https://gatsby-blog-images.s3.ap-northeast-2.amazonaws.com/thumb_poorbook.gif'
 description: '재미없는 책을 읽은 시간은 낭비일까? 아니겠지? 그래도 화가 나는 건 어쩔 수 없다'
 tags: ['조원경', '쌤앤파커스', '책']
 draft: false

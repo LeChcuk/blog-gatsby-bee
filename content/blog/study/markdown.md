@@ -2,13 +2,13 @@
 title: '📝 MarkDown 문법 정리'
 date: 2021-06-10 01:03:31
 category: 'study'
-thumbnail: 'https://gatsby-blog-images.s3.ap-northeast-2.amazonaws.com/thumb_MarkDown.svg.png'
+thumbnail: 'https://gatsby-blog-images.s3.ap-northeast-2.amazonaws.com/thumb_markdown.png'
 description: '.md 문서 작성법을 알아보자'
 tags: ['마크다운', 'MarkDown', '.md']
 draft: false
 ---
 
-![MarkDown logo](https://gatsby-blog-images.s3.ap-northeast-2.amazonaws.com/thumb_MarkDown.svg.png)
+![MarkDown logo](https://gatsby-blog-images.s3.ap-northeast-2.amazonaws.com/thumb_markdown.png)
 
 
 # 1.마크다운이란?

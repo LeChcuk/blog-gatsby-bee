@@ -2,7 +2,7 @@
 title: '📝 React SSR(1)'
 date: 2021-07-04 23:18:13
 category: 'study'
-thumbnail: 'https://gatsby-blog-images.s3.ap-northeast-2.amazonaws.com/thumb_reactSSR.jpg'
+thumbnail: 'https://gatsby-blog-images.s3.ap-northeast-2.amazonaws.com/react_ssr.jpg'
 description: 'React CRA 프로젝트에 SSR을 도입해보자'
 tags: ['SSR','데이터 로딩','웹팩']
 draft: false
